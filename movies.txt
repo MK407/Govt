@@ -1,0 +1,34 @@
+package sample;
+
+public abstract class Movies {
+
+	public static void main(String[] args) {
+
+	}
+
+}
+interface MovieTheatre{  
+void RRR();  
+void Pushpa();  
+void KGF2();  
+void SpidermanNowayHome();  
+}  
+  
+abstract class PRASADS implements MovieTheatre{  
+public void KGF2(){System.out.println("KGF2 Tickets are on sale!!!");}  
+}  
+  
+class IMAX extends PRASADS{  
+public void RRR(){System.out.println("RRR Tickets are on sale!!!");}  
+public void Pushpa(){System.out.println("Pushpa Tickets are on sale!!!");}  
+public void SpidermanNowayHome(){System.out.println("SpidermanNowayHome Tickets are on sale!!!");}  
+}  
+  
+class Oscars{  
+public static void main(String args[]){  
+MovieTheatre RRR=new IMAX();  
+RRR.RRR();  
+RRR.Pushpa();  
+RRR.KGF2();  
+RRR.SpidermanNowayHome();  
+}}  

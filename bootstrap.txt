@@ -1,0 +1,139 @@
+front-end framework
+
+HTML and CSS based design templates for forms, buttons, tables, navigation, images, carousels
+JS plugins
+
+create responsive design
+
+easy to use
+Resposive feature
+Mobile first approach
+Browser compatibility
+
+
+getbootstrap.com
+
+
+CDN
+
+BOOTSTRAP CONTAINERS
+used to pad content inside the container
+.container
+.container-fluid
+
+Fixed Container
+.container class - create a responsive fixed width container
+
+<div class="container">
+<h1></h1>
+ </div>
+
+
+Bootstrap Grids
+
+xs - phone - screen size <768px wide
+sm - tablets - > 768px wide
+md - small laptop - >=992px
+lg - lap or desktop - >=1200px wide
+
+
+
+<div class="row">
+  <div class="col-sm-6"></div>
+  <div class="col-*-*"></div>
+</div>
+<div class="row">
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+</div>
+<div class="row">
+  ...
+</div>
+
+
+typography classes
+
+.lead - paragraph stand out
+.small - indicates smaller text
+.text-left
+.text-center
+.text-right
+.text-justify
+.text-nowrap
+.text-lowercase
+.text-uppercase
+.text-capitalize
+.initialism - display text inside an <abbr> element
+.list-unstyled
+.list-inline
+.dl-horizontal
+.pre-scrollable <pre> 
+
+
+Navigation bar
+
+<nav class="navbar navbar-default">
+
+Default Navigation bar
+Inverted Navigation bar
+Navigation bar with dropdown
+Navbar buttons
+Navbar Forms
+fixed navigation bar
+Collapsible Navbar
+
+
+badges
+
+used to add additional informatio to content
+
+.badge
+
+
+Bootstrap 4 icons
+font awesome icons
+google material icons
+
+<i></i>
+
+
+LIST GROUP
+used to style & arrange <ul> <li>
+
+.list-group
+.list-group-item
+
+Active state - active - <li>
+List group with disabled item - disabled - <li>
+Remove border - list-group-flush - <ul>
+horizontal list group - list-group-horizontal -<ul>
+contextual classes list-group-item-success, secondary, info, warning, danger, primary, dark, light - <li>
+with badges - badge, badge-primary, badge-pill - based your design
+
+
+CARD
+BORDERED BOX with some padding around the content
+
+.card
+.card-body
+header - .card-header
+footer - .card-footer
+Contextual cards - .bg-primary, success, info, warning, danger, secondary, dark, light
+titles - .card-title
+text - card-text
+link - .card-link
+images - card-img-top, card-img-bottom
+overlay - card-img-overlay
+column - card-column
+deck - create grid of cards which be in equal height &width - card-deck
+group - .card-group - it removes left & margin between the each cards
+stretched link - link inside the card & it make clickable & hoverable - .stretched-link
+
+
+
+
+
+
+
+

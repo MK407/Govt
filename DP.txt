@@ -1,0 +1,306 @@
+DESIGN PATTERN
+well-proved solution for solving specific task
+SOLID PRINCIPLE
+S - SRP - Single Responsibility Principle - each JAVA class must perform single responsibility
+O - OCP - Open Close - modules should be open for extension and closed for modification
+L - LSP - Liskov Substitution  - barbara liskov- inheritance- derived class is completely substitutable for their base class.
+I - ISP - Interface Segregation - split larger interface into smaller one. implementation class use only the method thaat required.
+D - DIP - Dependency Inversion - use abstraction instead of concrete implementation - high-level module won't depends on low-level module but both depends on abstraction.
+
+
+WHY SHOULD WE USE SOLID PRINCIPLES?
+It reduces the dependencies- block of code can be changed without affecting other code blocks
+make design easy &understable
+avoid bad design
+maintainable, testable & scalable
+
+DESIGN PATTERN
+SOLution to solve specific problem/task
+
+PRO'S DESIGN PATTERN
+reusable in multiple projects 
+provide solution that helps to define system architecture
+capture the s/w engineering experience
+transperancy to the design of an application
+
+absolutte solution to the problem. clarity to the system architecture.
+
+CATEGORIES
+Core Java DP
+j2EE DP
+
+TYPES OF DP
+CREATIONAL DP
+Factory
+abstract Factory
+Singleton
+Prototype
+Builder
+STRUCTURAL DP
+Adapter
+Bridge
+Composite
+Decorator
+Facade
+Flyweight
+Proxy
+BEHAVIORAL DP
+Chain of Resposibility
+Command 
+Interpreter
+Iterator
+Mediator
+Memento
+Observer
+State
+Strategy
+Template 
+Visitor
+
+CREATION DP
+concerned with the way of creating objects
+when decision must be made at time of instantiation of class - creating object of class
+
+StudentRecord s1=new StudentRecord();
+
+
+FACTORY METHOD PATTERN
+define interface or abstract class for creating an object but the subclasses decide which class to instantiate.
+
+virtual constructor
+
+ADVANTAGE OF FACTORY PATTERN
+allows sub class to choose type of objects to create.
+promote loose-coupling by eliminating need to bind application specific classes into the code.
+which means code will interact with abstract class or interface.
+
+USAGE
+when class doesn't know what sub-classes will be required to create
+when a class wants its sub-classes specify the objects to be created.
+when the parent classes choose the creation of objects to its sub-classes.
+
+UML for FACTORY PATTERN
+
+ABSTRACT FACTORY PATTERN
+ Define interface or abstract class for creating families of related objects but without specifying sub-class
+
+KIT
+
+ADVANTAGE
+isolates the client code from implementation class
+easy - exchanging object families
+promotes consistency among objects
+
+USAGE
+system needs to be independent of how its object are created, composed & represented.
+family of related objects has to be used together, constraint needs to be enforced.
+provide library of objects that doesn't show implementation and reveals interfaces
+system needs to be configured with one of a multiple family of objects.
+
+UML 
+
+
+SINGLETON DESIGN PATTERN
+class that has only one object and provides a global point of access to it
+
+Early Instantiation - creation of object happen at load time
+Lazy Instantiation - creation of object happen whenever required
+
+
+ADVANTAGES
+Save memory 
+Single object is reused again and again
+
+USAGE
+multi thread, DB applications.
+logging,caching,thread pools, configuration settings
+
+HOW TO CREATE SDP
+
+Static Member - gets memory only once, contains object of singleton class
+Private Constructor - prevent singleton class from outside the class instantiation
+Static Factory Method - provides global point of access to singleton object and return the instance to caller.
+
+
+
+UML
+
+
+BUILDER DESIGN PATTERN
+construct complex object from simple objects using step-by-step approach
+
+ADVANTAGES
+provides clear separation between the constructor and representation of object
+better control over construction process
+change internal representation of object
+
+STEPS
+create interface
+create abstract classes
+create implementation classes
+create respective classes
+
+UML
+
+
+
+
+STRUCTURAL DESIGN PATTERN
+how classes & objects can be composed to form larger structures.
+simplifies the structure by identifying relationship
+focus on how classes inherit from eachother and how they are composed from other other classes.
+
+ADAPTER - adapt interface into another according to clientt expectation
+DECORATOR - add functionality to object dynamically
+BRIDGE - separate abstraction from implementation
+FACADE - provide interface to set of interfaces
+
+
+
+ADAPTER PATTER
+converts the interface of class into another interface.
+WRAPPER
+
+ADVANTAGE
+allow two or more object to interact
+allow reusable - existing function
+
+USAGE
+when an object needs to utilize existing class with incompatible interface.
+create reusable class that cooperates with classes which don't have compatible interfaces.
+
+UML
+Target interface - interface class used by client
+adapter class - wrapper class - implements targeted interface and modifies specific request available from adaptee class
+adaptee class - used by adapter class - reuse the functionality / modify
+client - interact with adapter class
+
+
+
+BRIDGE PATTERN
+decouple functional abstraction from implementation- independently
+hANDLE
+
+ADVANTAGE
+enable separation of implementation from interface
+improve extensibility
+allows hiding implementation details from client
+
+USAGE
+used when - don't need permanent binding between functional abstraction and implementation
+
+both functional abstraction and implementation need to extended using sub-classes
+we can use - where changes made in implementation doesn't affect clients
+
+UML 
+
+create interface which provide navigation
+create implementation 
+create class use interface - bridge
+create class that will extends the class
+create class
+
+
+DECORATOR PATTERN
+add a flexible additional responsibility to object dynamically
+
+WRAPPER
+
+ADVATAGES
+flexible
+enhance the extensibility of object
+simplify the code 
+
+USAGE
+ 
+when you want to transparently and dynamically add resposibilities to an object without affecting other objects
+
+add responsibility to object that you want to change in future
+
+extending functionality by sub-classing is -  not in practical
+
+
+UML
+create interface
+create class that will implements interface and override its all methods
+create abstract class that will implements interface and override its methods
+create class that will extends class and override all methods
+create class which will use interface
+
+
+FACADE PATTERN
+provides simple interface to a set of interfaces in subsystem, therefore it hides complexities of subsystem from client.
+
+ADVANTAGES
+SHIElds clients from complexities of sub-system components
+promotes loose coupling between subsystem and clients
+
+USAGE
+provides simple interface to complex sub system.
+several dependencies exist between clients and implementation classes of abstraction
+
+
+UML 
+create interface
+create implementation class that will implement interface
+create class uses the interface
+create client from interface
+
+
+BEHAVIORAL DP
+interaction and responsibility of objects.
+
+interaction between objects should be in a way they can easily communicate each other still in loosely couple.
+
+CHAIN OF RESPOSIBILITY
+COMMAND
+MEDIATOR
+STRATEGY
+OBSERVER
+STATE
+ITERATOR
+
+CHAIN OF RESPONSIBILITY
+SEnder send request to chain of objects. request can be handled by any of object in the chain.
+
+avoid coupling sender of request to its receiver by giving  multiple objects a chance to handle  request.
+
+
+ADVANTAGE
+reduce coupling
+add flexibility while assign responsibility to object
+allow set classes to act as one.
+
+USAGES
+When more than one object can handle a request and handler is unknown
+when group of objects that can handle request must be specified in dynamic way.
+
+STEPS
+abstract class
+logger class
+debuglogger
+error logger class
+client class
+
+COMMAND PATTERN
+ACTION / TRANSACTION
+encapsulate request under object as command and pass it to invoker object
+
+ADVANTAGE
+separate object that invokes the operation from object that actually perform operation
+it makes easy to add new commands because existing classes remain unchange
+
+USAGES
+when you need parameterize objects according to an action perform
+need to create and execute request at different times
+need to support roolback,logging or transactional functionality
+
+STEP
+
+command- interface to execute operation
+concretecommand - class extends command interface and implements execute method. create binding between action and receiver.
+client -  create croncrete command class and associate with receiver
+invoker - ask command to carry out the request
+receiver - perform operation.
+
+

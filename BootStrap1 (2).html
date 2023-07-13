@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+            first BootStrap
+        </title>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   </head>
+<body >
+    <div class="container" >
+        <div class="row bg-info">
+            <div class="col-xs-6">
+                <h1 style="color: deeppink; font-family: Verdana, Geneva, Tahoma, sans-serif;">Fast Food<small class="danger"><sub>ur taste buds needs a vist</sub></small></h1>
+            </div>
+            <div class="col-xs-6">
+            <h2 style="color: darkmagenta; font-family: Verdana, Geneva, Tahoma, sans-serif;"> For Delivery Call<small class="danger"><sub>1-800-622-4234</sub></small></h2> 
+        </div>
+        </div>
+        <div class="row" style="margin-bottom: 20px;margin-top: 20px;">
+            <button class="btn-danger">HOME PAGE</button>
+            <button class="btn-success">ABOUT US</button>
+            <button class="btn-info">OUR STAFF</button>
+            <button class="btn-warning" >ORDER FORM</button>
+            <button class="btn-danger" onclick="myFunction()">ORDER MENU</button>
+            <button class="btn-warning">CONTACT US</button>
+        </div>
+        <div class="row">
+           
+            <div class="col-xs-3">
+                <img src="https://media.istockphoto.com/photos/hamburger-with-cheese-and-french-fries-picture-id1188412964?k=6&m=1188412964&s=612x612&w=0&h=860S0kVoWTA60T4wakI8HLv-Y3fFw9jOKLSB4quEkIE=" class="img-thumbnail" alt="Burger" style="width:200px;height:200px">
+
+             </div>
+             <div class="col-xs-3">
+                 <img src="https://i1.fnp.com/images/pr/l/v20200722194613/tempting-truffle-pastry-6-pcs_1.jpg" alt="pastry" class="img-thumbnail" style="width:200px;height:200px">
+             </div>
+             <div class="col-xs-3">
+                <img src="https://www.oetker.in/Recipe/Recipes/oetker.in/in-en/pizza/image-thumb__52711__RecipeDetail/pizza-pollo-arrosto.jpg" class="img-thumbnail" alt="pizza" style="width:200px;height:200px" >         
+                </div>
+             <div class="col-xs-3">
+                <img src="https://c.ndtvimg.com/2019-03/rlh4rojo_protein-rich-sandwich-ideas_625x300_04_March_19.jpg" class="img-thumbnail" alt="sandwitch" style="width:200px;height:200px">
+             </div>
+
+        </div>
+        <div id="demo" style="display:none">
+            <table class="table table-bordered">
+            <thead>
+                <tr class="info">
+                <th>Item Name</th>
+                <th>Price</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr class="warning">
+                 <td>burger</td>
+                <td> Rs100/- </td>
+                </tr>
+                <tr class="primary">
+                    <td>sandwitch</td>
+                   <td> Rs80/- </td>
+                   </tr>
+                   <tr class="danger">
+                    <td>pizza</td>
+                   <td> Rs250/- </td>
+                   </tr>
+                   <tr class="default">
+                    <td>pastry</td>
+                   <td> Rs200/- </td>
+                   </tr>
+                   <tr class="success">
+                    <td>mojito</td>
+                   <td> Rs150/- </td>
+                   </tr>
+                   <tr class="danger"> 
+                    <td>chocolate fudge</td>
+                   <td> Rs1800/- </td>
+                   </tr>
+                   <tr class="warning">
+                    <td>combo-pack</td>
+                   <td> Rs350/- </td>
+                   </tr>
+
+            </tbody>
+        </table>
+        </div>
+        
+
+    </div>
+
+</body>
+<script>
+    function myFunction(){
+        var x=document.getElementById("demo");
+        if(x.style.display==="block"){
+            x.style.display="none";
+        }
+        else if (x.style.display==="none"){
+            x.style.display="block";
+        }
+        
+    }
+</script>
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,14 @@
+Onboarding notes:
+Install Gitbash/Gitdesktop or any application of your choice (I use gitExtensions)
+Install Webstorm
+Install Eclipse Oxygen
+Install Microsoft SQL Server Management Studio
+Install Postman (Standalone app or Chrome extension)
+Install Notepad++ (or any editing tool)
+
+
+Checklist:
+Get Admin Access for installing any softwares on the machine - Confirm if you have admin access
+Get Github Code Repository Access - EMOS API and EMOS Web - PMADHUS1/UVENKAT1 will work to set up
+Submit role access for EMOS (EMOS_Author) - please contact PMADHUS1/UVENKAT1
+EMOS DB (Dev) access - PMADHUS1/UVENKAT1 will request for access
